@@ -10,13 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
 <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+<!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
     <section class="header">
         <nav class="main_nav_container">
             <a href="index.html"><img src="/eduford_img/logo.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="icon fa-sharp fa-solid fa-xmark " onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -25,6 +28,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
+            <i class="icon fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -33,5 +37,45 @@
             <a href="" class="hero-btn">Visit Us To Know More</a>
         </div>
     </section>
+
+<!-- Courses -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium optio fuga cupiditate eveniet non odio illo accusamus vero. Ut, assumenda consequatur veniam dolorum consectetur consequuntur ipsam suscipit vero ratione reprehenderit quo iusto! Provident praesentium doloremque corporis quisquam? Adipisci quae magni quo quos possimus provident eveniet ut! Explicabo excepturi vero eveniet!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium optio fuga cupiditate eveniet non odio illo accusamus vero. Ut, assumenda consequatur veniam dolorum consectetur consequuntur ipsam suscipit vero ratione reprehenderit quo iusto! Provident praesentium doloremque corporis quisquam? Adipisci quae magni quo quos possimus provident eveniet ut! Explicabo excepturi vero eveniet!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium optio fuga cupiditate eveniet non odio illo accusamus vero. Ut, assumenda consequatur veniam dolorum consectetur consequuntur ipsam suscipit vero ratione reprehenderit quo iusto! Provident praesentium doloremque corporis quisquam? Adipisci quae magni quo quos possimus provident eveniet ut! Explicabo excepturi vero eveniet!</p>
+            </div>
+        </div>
+
+    </section>
+
+
+<!-- Javascript to Toggle Menu in @media -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+
+
 </body>
 </html>
